@@ -23,9 +23,9 @@ const initializePassport = () => {
                 if (!user) {
                     console.warn("User doesn't exists with username: " + profile._json.email);
                     let newUser = {
-                        first_name: profile._json.name,
+                        first_name: profile._json.login,
                         last_name: '',
-                        age: 28,
+                        age: 1,
                         email: profile._json.email,
                         password: '',
                         loggedBy: "GitHub"
